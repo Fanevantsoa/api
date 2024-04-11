@@ -56,15 +56,7 @@ def all_students():
     elif request.method == 'POST':
         try:
             # Récupérer le contenu JSON de la requête
-            # user_json = request.json
-
-            # Définition de l'objet JSON
-            user_json ='''{
-                "id": "001-23-M1",
-                "firstname": "Pelamialy Lastella",
-                "lastname": "HASOA RANJALIFERA",
-                "classe": "M1"
-            }'''
+            user_json = request.json
             
             # Charger l'objet JSON en tant que dictionnaire Python
             user_data = json.loads(user_json)
@@ -104,15 +96,7 @@ def one_student(student_id):
     elif request.method == 'PUT':
         try:
             # Récupérer le contenu JSON de la requête
-            # user_json = request.json
-
-            # Définition de l'objet JSON
-            user_json ='''{
-                "id": "001-24-M1",
-                "firstname": "Pelamialy Lastella",
-                "lastname": "HASOA RANJALIFERA",
-                "classe": "M1"
-            }'''
+            user_json = request.json
             
             # Charger l'objet JSON en tant que dictionnaire Python
             user_data = json.loads(user_json)
@@ -177,14 +161,7 @@ def all_event():
     elif request.method == 'POST':
         try:
             # Récupérer le contenu JSON de la requête
-            # user_json = request.json
-
-            # Définition de l'objet JSON
-            user_json ='''{
-                "id": "001-24-M1",
-                "payment": true,
-                "presence": false
-            }'''
+            user_json = request.json
             
             # Charger l'objet JSON en tant que dictionnaire Python
             user_data = json.loads(user_json)
@@ -223,14 +200,7 @@ def one_event(student_id):
     elif request.method == 'PUT':
         try:
             # Récupérer le contenu JSON de la requête
-            # user_json = request.json
-
-            # Définition de l'objet JSON
-            user_json ='''{
-                "id": "001-24-M1",
-                "payment": true,
-                "presence": true
-            }'''
+            user_json = request.json
             
             # Charger l'objet JSON en tant que dictionnaire Python
             user_data = json.loads(user_json)
