@@ -56,10 +56,7 @@ def all_students():
     elif request.method == 'POST':
         try:
             # Récupérer le contenu JSON de la requête
-            user_json = request.json
-            
-            # Charger l'objet JSON en tant que dictionnaire Python
-            user_data = json.loads(user_json)
+            user_data = request.json
 
             #Connection to the mysql database
             conn = connect_to_database()
@@ -96,10 +93,7 @@ def one_student(student_id):
     elif request.method == 'PUT':
         try:
             # Récupérer le contenu JSON de la requête
-            user_json = request.json
-            
-            # Charger l'objet JSON en tant que dictionnaire Python
-            user_data = json.loads(user_json)
+            user_data = request.json
 
             #Connection to the mysql database
             conn = connect_to_database()
@@ -161,10 +155,7 @@ def all_event():
     elif request.method == 'POST':
         try:
             # Récupérer le contenu JSON de la requête
-            user_json = request.json
-            
-            # Charger l'objet JSON en tant que dictionnaire Python
-            user_data = json.loads(user_json)
+            user_data = request.json
 
             #Connection to the mysql database
             conn = connect_to_database()
@@ -200,10 +191,7 @@ def one_event(student_id):
     elif request.method == 'PUT':
         try:
             # Récupérer le contenu JSON de la requête
-            user_json = request.json
-            
-            # Charger l'objet JSON en tant que dictionnaire Python
-            user_data = json.loads(user_json)
+            user_data = request.json
 
             #Connection to the mysql database
             conn = connect_to_database()
