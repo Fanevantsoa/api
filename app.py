@@ -76,7 +76,7 @@ def all_students():
             return get_data_db("SELECT * FROM students WHERE id=%s", (user_data["id"],))
 
         except Exception as e:
-            return jsonify(), 500
+            return jsonify(e), 500
 
     else:
         'Nothing Found', 404
